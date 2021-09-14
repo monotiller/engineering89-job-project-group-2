@@ -3,6 +3,7 @@ name: Publish Docker image
 on:
   push:
     branches: [docker]
+  workflow_dispatch: # The manual trigger
     
 env:
   REGISTRY: ghcr.io
